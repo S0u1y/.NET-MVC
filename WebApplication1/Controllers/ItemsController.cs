@@ -6,9 +6,14 @@ namespace WebApplication1.Controllers{
     {
         public IActionResult Overview()
         {
-            Item item = new Item{Name = "Keyboard"};
+            Item item = new Item { Name = "Keyboard" };
 
             return View(item);
+        }
+
+        public IActionResult Edit(int id)
+        {
+            return Content("id = " + id);
         }
     }
 }
